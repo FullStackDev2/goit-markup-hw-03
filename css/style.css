@@ -120,8 +120,9 @@ button:focus {
     display: flex;
     flex-direction: row;
     text-align:inherit;
-    justify-content:center;
+    justify-content:space-between;
     gap: 12px;
+    padding-left: 15px;
 }
 
 .strategy ul li {
