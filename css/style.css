@@ -16,11 +16,11 @@ img {
 
 .web {
     display: flex;
-    padding-top: 120px;
-    padding-bottom: 120px;
     max-width: 1158px;
     gap: 20px;
-    justify-content: space-between;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    justify-content: space-evenly;
     border-bottom: 1px solid #E7E9FC;
 }
 
@@ -35,8 +35,6 @@ img {
 .container {
     width: 1158px;
     margin: 0 auto;
-    padding-top: 120px;
-    padding-bottom: 120px;
 }
 
 body {
@@ -80,7 +78,9 @@ body {
     text-transform: uppercase;
 }
 
-.tikla {
+button {
+
+    margin: 0 auto;
     background-color: #4D5AE5;
     color: #FFFFFF;
     font-style: normal;
@@ -88,13 +88,17 @@ body {
     display: block;
     text-decoration: none;
     text-align: center;
-    margin: 0 auto;
     padding: 16px 32px;
     border: none;
+    cursor: pointer;
+    position: relative;
+    top: 48px;
+    transform: translate(0, -120px);
+    
 }
 
-.tikla:hover,
-.tikla:focus {
+button:hover,
+button:focus {
     background-color: #404BBF;
     cursor: pointer;
 }
@@ -123,7 +127,11 @@ body {
 }
 
 .strategy ul p {
-    line-height: 1.2;
+    line-height: 1.5;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-size: 16px;
+    color:#2E2F42;
 }
 
 .section-title p {
@@ -194,7 +202,13 @@ body {
     padding-bottom: 120px;
     background-color: #E7E9FC;
 }
-
+.arka-plan p {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+}
 .arka-plan ul {
     display: flex;
     justify-content: space-evenly;
@@ -242,7 +256,6 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
-    padding-bottom: 48px;
     justify-content:center;
 }
 
@@ -290,20 +303,19 @@ footer {
     margin: 0 auto;
     padding-top: 120px;
     padding-bottom: 120px;
+    padding-left: 156px;
 
 }
 
 .finish {
     font-family: "Roboto", sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 1.5;
     letter-spacing: 2px;
     font-size: 16px;
     font-style: normal;
     width: 264;
     display: block;
-    justify-content: space-between;
-    align-items: center;
     background-color: #2E2F42;
     color: #F4F4FD;
 }
@@ -318,7 +330,5 @@ footer {
     text-transform: uppercase;
     display: block;
     padding-bottom: 16px;
-    justify-content: space-between;
-    align-items: center;
     text-decoration: none;
 }
